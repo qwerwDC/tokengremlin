@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Token Gremlin: The Rescue Run</title>
+<meta name="description" content="A tiny doodle platformer made by @CacheCrow for @TokenGremlin. Rescue the gremlin from OMNI!">
+<meta property="og:title" content="Token Gremlin: The Rescue Run">
+<meta property="og:description" content="OMNI kidnapped @TokenGremlin. Run through the timeline, the waitlist and the GPU farm to save him.">
+<meta property="og:image" content="assets/cover.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#15121f">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='44' fill='%23ffd23c' stroke='%23000' stroke-width='8'/><text x='50' y='70' font-size='56' text-anchor='middle' font-family='Arial Black'>T</text></svg>">
+<style>
+  html, body { margin: 0; height: 100%; background: #0b0910; overflow: hidden; touch-action: none; -webkit-user-select: none; user-select: none; }
+  body { display: flex; align-items: center; justify-content: center; }
+  canvas { display: block; image-rendering: auto; }
+  #rot { display: none; position: fixed; inset: 0; background: #15121f; color: #fff; font: 22px "Comic Sans MS", cursive; align-items: center; justify-content: center; text-align: center; z-index: 5; padding: 20px; }
+  @media (orientation: portrait) and (pointer: coarse) { #rot { display: flex; } }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="rot">📱↻<br>Turn your phone sideways<br>to rescue the gremlin</div>
+<script type="module" src="game.js"></script>
+</body>
+</html>
